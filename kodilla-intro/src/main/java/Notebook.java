@@ -33,7 +33,6 @@ public class Notebook {
     }
 
     public void checkYearAndPrice() {
-
         if (this.year < 2005 ) {
             System.out.println("This notebook have Windows XP operating system");
         } else if (this.year > 2006 && this.year < 2014 && this.price < 1200) {
