@@ -5,14 +5,11 @@ public class Notebook {
     int year;
     char grade;
 
-
     public Notebook(int weight, int price, int year, char grade) {
-
         this.weight = weight;
         this.price = price;
         this.year = year;
         this.grade = grade;
-
     }
 
     public void checkPrice() {
@@ -35,11 +32,11 @@ public class Notebook {
         }
     }
 
-
     public void checkYearAndPrice() {
-        if (this.year < 2005 && this.price < 600) {
+
+        if (this.year < 2005 ) {
             System.out.println("This notebook have Windows XP operating system");
-        } else if (this.year > 2008 && this.year < 2014 && this.price > 600 && this.price < 1200) {
+        } else if (this.year > 2006 && this.year < 2014 && this.price < 1200) {
             System.out.println("This notebook have Windows Vista operating system");
         } else {
             System.out.println("This notebook have Windows 10 operating system");
@@ -53,16 +50,6 @@ public class Notebook {
             System.out.println("This notebook is for Paweł");
         } else {
             System.out.println("This notebook is for Arek");
-        }
-    }
-
-    public void checkCpu() {
-        if (this.year > 1999 && this.year < 2003) {
-            System.out.println("This notebook has Pentium III Processor.");
-        } else if (this.year > 2008 && this.year < 2012) {
-            System.out.println("This notebook has Intel Core i3 Processor.");
-        } else {
-            System.out.println("This notebook has Intel Core i7 Processor.");
         }
     }
 }
