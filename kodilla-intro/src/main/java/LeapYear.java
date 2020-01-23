@@ -1,12 +1,13 @@
 public class LeapYear {
-    public static void main(String[] args) {
-         int year = 2011; // type year
+  public static void main(String[] args) {
+        leapYear(2016);
+    }
 
-        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0 || year % 400 == 0);
-        if (isLeapYear == true ) {
-            System.out.println("Leap Year!");
-        } else{
-            System.out.println("Not a Leap Year!");
+    public static void leapYear(int leapYear) {
+        if (leapYear % 4 == 0 && leapYear % 100 != 0 || leapYear % 400 == 0) {
+            System.out.println("It's leap year!");
+        } else {
+            System.out.println("It's not a leap year!");
         }
     }
 }
