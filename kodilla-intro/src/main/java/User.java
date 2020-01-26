@@ -1,22 +1,23 @@
 public class User {
 
-    String name;
+    String user;
     int age;
 
-    public User(String name, int age) {
-        this.name = name;
+    public User(String user, int age) {
+        this.user = user;
         this.age = age;
     }
 
-    public void returnName() {
-        returnName();
+    public String returnUser() {
+        return this.user;
     }
 
-    public void returnAge() {
-       returnAge();
+    public int returnAge() {
+        return this.age;
     }
 
     public static void main(String[] args) {
+
 
         User anna = new User("Anna", 20);
         User betty = new User("Betty", 33);
@@ -26,10 +27,11 @@ public class User {
         User frankie = new User("Frankie", 45);
 
         User[] users = {anna, betty, carl, david, eva, frankie};
-        System.out.println("User 3: " + users[3]);
 
-    }
+        int result = 0;//suma wieku
+        for (int i = 0; i < users.length; i++) {
+            result = result + users[i].returnAge();
+        }
 
-}
-
-
+        int averageAge = result / users.length;//średnia wieku userów
+        for (int i = 0; i < users.length; i++) {
