@@ -15,6 +15,3 @@ public class Windows10 extends WindowsVista {
         System.out.println("System Windows 10 is turned off");
     }
 }
-
-
-
